@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: Test DocStyle
+      run: pydocstyle apps
     - name: Build docker image
       run: make docker-build
     - name: Run tests
