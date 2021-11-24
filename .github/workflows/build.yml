@@ -16,3 +16,5 @@ jobs:
       run: make docker-build
     - name: Run tests
       run: make docker-runtest-all
+    - name: Python Style Checker
+      uses: andymckay/pycodestyle-action@0.1.3
